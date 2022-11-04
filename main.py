@@ -56,8 +56,22 @@ print(greatest(top_wc_winners))
 # Exercise number 4:
 
 flavor_list_1 = ["vanilla", "cherry"]
-flavor_list_2 = ["cake", "ice_cream"]
+flavor_list_2 = ["cake", "ice_cream", "pistachio"]
 
 def zipper(flavor_list_1, flavor_list_2):
+    same_len_output = {}
+    diff_len_output_list = []
+    
     if len(flavor_list_1) == len(flavor_list_2):
-        
+        for i in range(len(flavor_list_1)):
+            same_len_output[flavor_list_1[i]] = flavor_list_2[i]
+        return same_len_output
+    elif len(flavor_list_1) != len(flavor_list_2):
+        diff_len_output_list.append(flavor_list_1)
+        diff_len_output_list.append(len(flavor_list_1))
+        diff_len_output_list.append(flavor_list_2)
+        diff_len_output_list.append(len(flavor_list_2))
+        return tuple(diff_len_output_list)
+
+print(zipper(flavor_list_1, flavor_list_2))
+
