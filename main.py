@@ -51,4 +51,13 @@ def greatest(top_wc_winners):
 
 print(greatest(top_wc_winners))
 
+#__________________________________________________________________________
 
+# Exercise number 4:
+
+flavor_list_1 = ["vanilla", "cherry"]
+flavor_list_2 = ["cake", "ice_cream"]
+
+def zipper(flavor_list_1, flavor_list_2):
+    if len(flavor_list_1) == len(flavor_list_2):
+        
