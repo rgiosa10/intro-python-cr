@@ -1,4 +1,4 @@
-print("Exercise 1:") # to help readability of outputs
+# 1.) A function called list_sayer() that takes a list as an argument
 
 list_1 = ["Hello", "world", 9, 3.14]
 
@@ -17,15 +17,18 @@ def list_sayer(list_1):
         # return the Boolean False
         return False
 
-#list_sayer(list_1)
+print("Exercise 1:") # to help readability of outputs
 true_or_false_check = list_sayer(list_1) # Run the function to see name of item and its index, and capture in variable to print Boolean output
 print(true_or_false_check) # Print to see the correct return Boolean in output
-
 print("__________________________________________________________________________") # to help readability of outputs
 
-print("Exercise 2:") # to help readability of outputs
+# 2.) A function called dict_sayer() that takes a dictionary as an argument
 
-dict_1 = {"name": "Ruben", "age": 36, "dog's name": "Messi"}
+dict_1 = {
+    "name": "Ruben",
+    "age": 36,
+    "dog's name": "Messi",
+    }
 
 def dict_sayer(dict_1):
     # If the dictionary isn't empty (i.e. there's one or more items in it)
@@ -43,15 +46,21 @@ def dict_sayer(dict_1):
         return False
 
 
-#dict_sayer(dict_1)
+print("Exercise 2:") # to help readability of outputs
 true_or_false_check_2 = dict_sayer(dict_1) # Run the function to see each key and respective value, and capture in variable to print Boolean output
 print(true_or_false_check_2) # Print to see the correct return Boolean in output
-
 print("__________________________________________________________________________") # to help readability of outputs
 
-print("Exercise 3:") # to help readability of outputs
+# 3.) A function called greatest() that takes as an argument a dictionary that has strings as keys and integers as values
 
-top_wc_winners = {"Argentina": 2, "Germany": 4, "Italy": 4, "France": 2, "Uruguay": 2, "Brazil": 5}
+top_wc_winners = {
+    "Argentina": 2,
+    "Germany": 4,
+    "Italy": 4, 
+    "France": 2, 
+    "Uruguay": 2, 
+    "Brazil": 5,
+    }
 
 def greatest(top_wc_winners):
     largest_value = 0
@@ -87,11 +96,11 @@ def greatest(top_wc_winners):
     # return a tuple with the greatest value and its key
     return tuple(container_list)
 
+print("Exercise 3:") # to help readability of outputs
 print(greatest(top_wc_winners)) # print function in order to see return in output
-
 print("__________________________________________________________________________") # to help readability of outputs
 
-print("Exercise 4:") # to help readability of outputs
+# 4.) A function called zipper() that takes two lists as arguments
 
 flavor_list_1 = ["vanilla", "cherry"]
 flavor_list_2 = ["cake", "ice_cream", "pistachio"]
@@ -116,5 +125,6 @@ def zipper(flavor_list_1, flavor_list_2):
         # return a tuple with each list and its length
         return tuple(diff_len_output_list)
 
+print("Exercise 4:") # to help readability of outputs
 print(zipper(flavor_list_1, flavor_list_2)) # print function in order to see return in output
 
