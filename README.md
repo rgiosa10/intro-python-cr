@@ -14,7 +14,9 @@
 
 ## Description
 
-This repo includes several functions that illustrates skills using dictionaries, loops, lists, and strings. There are four different functions: 1) list_sayer() 2) dict_sayer() 3) dict_sayer() and 4) zipper() that leverage either lists or dictionaries as parameters to run according to specific specs.
+This repo includes several functions that illustrates skills using dictionaries, loops, lists, and strings. There are four different functions: 1) list_sayer() 2) dict_sayer() 3) greatest() and 4) zipper() that leverage either lists or dictionaries as parameters to run according to specific specs.
+
+Added additional functionality to greatest() that in the instance that multiple keys share the greatest value, it will pick the key who's first letter come first in the alphabet, instead of the order in which it is found in the dictionary (i.e. {"cat": 8, "zebra": 10, "dog": 10} it returns the (10 , "dog") instead of (10 , "zebra")).
 
 ## Setup/Installation Requirements
 
