@@ -21,13 +21,34 @@ Added additional functionality to greatest() that in the instance that multiple 
 ## Setup/Installation Requirements
 
 * Go to https://github.com/rgiosa10/intro-python-cr.git to find the specific repository for this website.
-* Then open your terminal. I recommend going to your Desktop directory (command: $ cd Desktop).
-* Then clone the project by inputting: $ git clone https://github.com/rgiosa10/intro-python-cr.git
-* Go to the new directory (command: $ cd intro-python-cr) or open the directory folder on your desktop.
-* Once in the directory you will need to set up a virtual environment in your terminal (command: $ python3.7 -m venv venv).
-* Then activate the environment (command: $ source venv/bin/activate).
-* Install the necessary items with requirements.txt (command: $ pip install -r requirements.txt).
-* With your virtual environment now enabled with proper requirements, open the directory (command: code .).
+* Then open your terminal. I recommend going to your Desktop directory:
+    ```
+    cd Desktop
+    ```
+* Then clone the repository by inputting: 
+  ```
+  git clone https://github.com/rgiosa10/intro-python-cr.git
+  ```
+* Go to the new directory or open the directory folder on your desktop:
+  ```
+  cd intro-python-cr
+  ```
+* Once in the directory you will need to set up a virtual environment in your terminal:
+  ```
+  python3.7 -m venv venv
+  ```
+* Then activate the environment:
+  ```
+  source venv/bin/activate
+  ```
+* Install the necessary items with requirements.txt:
+  ```
+    pip install -r requirements.txt
+  ```
+* With your virtual environment now enabled with proper requirements, open the directory:
+  ```
+  code .
+  ```
 
 ## Known Bugs
 
