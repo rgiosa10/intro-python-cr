@@ -14,7 +14,7 @@
 
 ## Description
 
-This repo includes several functions that illustrates skills using dictionaries, loops, lists, and strings. function
+This repo includes several functions that illustrates skills using dictionaries, loops, lists, and strings. There are four different functions: 1) list_sayer() 2) dict_sayer() 3) dict_sayer() and 4) zipper() that leverage either lists or dictionaries as parameters to run according to specific specs.
 
 ## Setup/Installation Requirements
 
@@ -23,7 +23,7 @@ This repo includes several functions that illustrates skills using dictionaries,
 * Then clone the project by inputting: $ git clone https://github.com/rgiosa10/intro-python-cr.git
 * Go to the new directory (command: $ cd intro-python-cr) or open the directory folder on your desktop.
 * Once in the directory you will need to set up a virtual environment in your terminal (command: $ python3.7 -m venv venv).
-* Then activate the enviroment (command: $ source venv/bin/activate).
+* Then activate the environment (command: $ source venv/bin/activate).
 * Install the necessary items with requirements.txt (command: $ pip install -r requirements.txt).
 * With your virtual environment now enabled with proper requirements, open the directory (command: code .).
 
