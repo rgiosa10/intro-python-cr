@@ -12,6 +12,8 @@ def list_sayer(list_1):
         return False
 
 list_sayer(list_1)
+true_or_false_check = list_sayer(list_1)
+print(true_or_false_check)
 
 #__________________________________________________________________________
 
@@ -30,8 +32,23 @@ def dict_sayer(dict_1):
 
 
 dict_sayer(dict_1)
+true_or_false_check_2 = dict_sayer(dict_1)
+print(true_or_false_check_2)
 
 #__________________________________________________________________________
 
 # Exercise number 3:
+
+top_wc_winners = {"Argentina": 2, "Brazil": 5, "Germany": 4, "Italy": 4, "France": 2, "Uruguay": 2}
+
+def greatest(top_wc_winners):
+    container_list = [0, None]
+    for key, value in top_wc_winners.items():
+        if value > container_list[0]: 
+            container_list[0] = value
+            container_list[1] = key
+    return tuple(container_list)
+
+print(greatest(top_wc_winners))
+
 
