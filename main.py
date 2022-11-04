@@ -51,7 +51,7 @@ print("_________________________________________________________________________
 
 print("Exercise 3:") # to help readability of outputs
 
-top_wc_winners = {"Argentina": 2, "Brazil": 5, "Germany": 4, "Italy": 4, "France": 2, "Uruguay": 2}
+top_wc_winners = {"Argentina": 2, "Germany": 4, "Italy": 4, "France": 2, "Uruguay": 2, "Brazil": 5}
 
 def greatest(top_wc_winners):
     container_list = [0, None]
@@ -61,6 +61,27 @@ def greatest(top_wc_winners):
         if value > container_list[0]:
             container_list[0] = value
             container_list[1] = key
+
+    # Counts how many iterances of the greatest value there are
+    tied_top_counter = 0
+    # Captures each key of the multiple instances of the greatest value
+    tied_top_value = []
+    
+    # Counts if the greatest value occurs multiple times
+    for value in top_wc_winners.values():
+        if value == container_list[0]:
+            tied_top_counter += 1
+    
+    # If there are multiple keys with the same greatest value it adds it to tied_top_value list
+    if tied_top_counter > 1:
+        for key, value in top_wc_winners.items():
+            if value == container_list[0]:
+                tied_top_value.append(key)
+        # Sorts list alphabetically to pick greatest value key based on alphabetical order using first letter of the key
+        tied_top_value.sort()
+        # Add key based on alphabetical order as the greatest value key
+        container_list[1] = tied_top_value[0]
+  
     # return a tuple with the greatest value and its key
     return tuple(container_list)
 
