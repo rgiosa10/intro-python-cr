@@ -13,6 +13,25 @@ def list_sayer(list_1):
 
 list_sayer(list_1)
 
+#__________________________________________________________________________
+
 # Exercise number 2:
 
+dict_1 = {"name": "Ruben", "age": 36, "dog's name": "Messi"}
+
+def dict_sayer(dict_1):
+    if len(dict_1) > 0:
+        for key, value in dict_1.items():
+            print(f"The name of key is '{key}' with a value '{value}'")
+        return True
+    else: 
+        print("The dictionary is empty")
+        return False
+
+
+dict_sayer(dict_1)
+
+#__________________________________________________________________________
+
+# Exercise number 3:
 
