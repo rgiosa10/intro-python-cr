@@ -54,7 +54,9 @@ print("Exercise 3:") # to help readability of outputs
 top_wc_winners = {"Argentina": 2, "Germany": 4, "Italy": 4, "France": 2, "Uruguay": 2, "Brazil": 5}
 
 def greatest(top_wc_winners):
-    container_list = [0, None]
+    largest_value = 0
+    largest_key = None
+    container_list = [largest_value, largest_key]
     #check each key, value in dictionary
     for key, value in top_wc_winners.items():
         # find the greatest value in dictionary by comparing against index 0 of container_list
